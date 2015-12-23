@@ -1,0 +1,16 @@
+[
+{
+  "modid": "wisefamilyplusmod",
+  "name": "Wise Family Plus",
+  "description": "Our Wise Family plus mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Me"],
+  "credits": "Me, because I'm cool",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
