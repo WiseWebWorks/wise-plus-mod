@@ -11,20 +11,20 @@ public class Textures {
         ItemModelMesher itemModelMesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
 
         // Blocks
-        itemModelMesher.register(Item.getItemFromBlock(Blocks.titaniumOre), 0, new ModelResourceLocation(MODID + ":" + Blocks.titaniumOre.getName(), "inventory"));
-        itemModelMesher.register(Item.getItemFromBlock(Blocks.titaniumBlock), 0, new ModelResourceLocation(MODID + ":" + Blocks.titaniumBlock.getName(), "inventory"));
+        itemModelMesher.register(Item.getItemFromBlock(ModBlocks.titaniumOre), 0, new ModelResourceLocation(MODID + ":" + ModBlocks.titaniumOre.getName(), "inventory"));
+        itemModelMesher.register(Item.getItemFromBlock(ModBlocks.titaniumBlock), 0, new ModelResourceLocation(MODID + ":" + ModBlocks.titaniumBlock.getName(), "inventory"));
 
         // Items
-        itemModelMesher.register(Items.titaniumAxe, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumAxe.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumBoots, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumBoots.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumChestplate, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumChestplate.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumHelmet, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumHelmet.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumHoe, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumHoe.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumHorseArmor, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumHorseArmor.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumIngot, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumIngot.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumLeggings, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumLeggings.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumPickaxe, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumPickaxe.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumShovel, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumShovel.getName(), "inventory"));
-        itemModelMesher.register(Items.titaniumSword, 0, new ModelResourceLocation(MODID + ":" + Items.titaniumSword.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumAxe, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumAxe.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumBoots, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumBoots.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumChestplate, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumChestplate.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumHelmet, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumHelmet.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumHoe, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumHoe.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumHorseArmor, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumHorseArmor.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumIngot, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumIngot.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumLeggings, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumLeggings.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumPickaxe, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumPickaxe.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumShovel, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumShovel.getName(), "inventory"));
+        itemModelMesher.register(ModItems.titaniumSword, 0, new ModelResourceLocation(MODID + ":" + ModItems.titaniumSword.getName(), "inventory"));
     }
 }

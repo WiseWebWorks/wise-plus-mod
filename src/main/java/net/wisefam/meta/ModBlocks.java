@@ -3,7 +3,7 @@ package net.wisefam.meta;
 import net.wisefam.blocks.TitaniumBlock;
 import net.wisefam.blocks.TitaniumOre;
 
-public class Blocks {
+public class ModBlocks {
 
     public static TitaniumOre titaniumOre;
     public static TitaniumBlock titaniumBlock;

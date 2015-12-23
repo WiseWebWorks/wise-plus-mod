@@ -1,8 +1,8 @@
 package net.wisefam;
 
 import net.wisefam.materials.TitaniumMaterial;
-import net.wisefam.meta.Blocks;
-import net.wisefam.meta.Items;
+import net.wisefam.meta.ModBlocks;
+import net.wisefam.meta.ModItems;
 import net.wisefam.meta.Recipes;
 import net.wisefam.meta.Textures;
 import net.minecraft.block.material.Material;
@@ -36,10 +36,10 @@ public class WisePlusMod {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         // Blocks
-        Blocks.initialize();
+        ModBlocks.initialize();
 
         // Items
-        Items.initialize();
+        ModItems.initialize();
     }
 
     /**

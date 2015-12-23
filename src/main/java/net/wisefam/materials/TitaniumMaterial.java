@@ -1,6 +1,6 @@
 package net.wisefam.materials;
 
-import net.wisefam.meta.Items;
+import net.wisefam.meta.ModItems;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -16,7 +16,7 @@ public class TitaniumMaterial extends Material {
     public TitaniumMaterial() {
         super(MapColor.ironColor);
 
-        TOOL.setRepairItem(new ItemStack(Items.titaniumIngot));
+        TOOL.setRepairItem(new ItemStack(ModItems.titaniumIngot));
 
         setRequiresTool();
     }

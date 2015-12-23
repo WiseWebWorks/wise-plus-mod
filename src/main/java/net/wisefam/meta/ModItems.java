@@ -2,7 +2,7 @@ package net.wisefam.meta;
 
 import net.wisefam.items.*;
 
-public class Items {
+public class ModItems {
 
     public static TitaniumAxe titaniumAxe;
     public static TitaniumBoots titaniumBoots;
