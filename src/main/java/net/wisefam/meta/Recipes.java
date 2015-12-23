@@ -1,4 +1,4 @@
-package com.wisefam.meta;
+package net.wisefam.meta;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

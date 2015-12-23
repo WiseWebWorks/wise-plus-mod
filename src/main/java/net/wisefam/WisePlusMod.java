@@ -1,10 +1,10 @@
-package com.wisefam;
+package net.wisefam;
 
-import com.wisefam.materials.TitaniumMaterial;
-import com.wisefam.meta.Blocks;
-import com.wisefam.meta.Items;
-import com.wisefam.meta.Recipes;
-import com.wisefam.meta.Textures;
+import net.wisefam.materials.TitaniumMaterial;
+import net.wisefam.meta.Blocks;
+import net.wisefam.meta.Items;
+import net.wisefam.meta.Recipes;
+import net.wisefam.meta.Textures;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;

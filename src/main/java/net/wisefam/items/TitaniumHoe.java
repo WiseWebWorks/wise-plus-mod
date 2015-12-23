@@ -1,15 +1,15 @@
-package com.wisefam.items;
+package net.wisefam.items;
 
-import com.wisefam.materials.TitaniumMaterial;
+import net.wisefam.materials.TitaniumMaterial;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemHoe;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class TitaniumShovel extends ItemSpade {
+public class TitaniumHoe extends ItemHoe {
 
-    private final String name = "titaniumShovel";
+    private final String name = "titaniumHoe";
 
-    public TitaniumShovel() {
+    public TitaniumHoe() {
         super(TitaniumMaterial.TOOL);
 
         GameRegistry.registerItem(this, name);

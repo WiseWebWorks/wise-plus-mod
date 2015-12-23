@@ -1,20 +1,20 @@
-package com.wisefam.items;
+package net.wisefam.items;
 
-import com.wisefam.materials.TitaniumMaterial;
+import net.wisefam.materials.TitaniumMaterial;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemSword;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class TitaniumPickaxe extends ItemPickaxe {
+public class TitaniumSword extends ItemSword {
 
-    private final String name = "titaniumPickaxe";
+    private final String name = "titaniumSword";
 
-    public TitaniumPickaxe() {
+    public TitaniumSword() {
         super(TitaniumMaterial.TOOL);
 
         GameRegistry.registerItem(this, name);
         setMaxStackSize(64);
-        setCreativeTab(CreativeTabs.tabTools);
+        setCreativeTab(CreativeTabs.tabCombat);
         setUnlocalizedName(name);
     }
 

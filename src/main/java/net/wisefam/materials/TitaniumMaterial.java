@@ -1,6 +1,6 @@
-package com.wisefam.materials;
+package net.wisefam.materials;
 
-import com.wisefam.meta.Items;
+import net.wisefam.meta.Items;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;

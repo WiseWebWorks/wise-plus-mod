@@ -1,6 +1,6 @@
-package com.wisefam.meta;
+package net.wisefam.meta;
 
-import com.wisefam.items.*;
+import net.wisefam.items.*;
 
 public class Items {
 

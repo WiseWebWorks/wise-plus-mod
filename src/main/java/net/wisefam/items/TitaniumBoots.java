@@ -1,4 +1,4 @@
-package com.wisefam.items;
+package net.wisefam.items;
 
 public class TitaniumBoots extends TitaniumArmor {
 

@@ -1,4 +1,4 @@
-package com.wisefam.meta;
+package net.wisefam.meta;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;

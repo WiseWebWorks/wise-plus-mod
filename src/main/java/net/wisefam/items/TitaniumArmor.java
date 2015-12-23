@@ -1,7 +1,7 @@
-package com.wisefam.items;
+package net.wisefam.items;
 
-import com.wisefam.WisePlusMod;
-import com.wisefam.materials.TitaniumMaterial;
+import net.wisefam.WisePlusMod;
+import net.wisefam.materials.TitaniumMaterial;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;

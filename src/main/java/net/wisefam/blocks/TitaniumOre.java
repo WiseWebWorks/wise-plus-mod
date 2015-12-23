@@ -1,4 +1,4 @@
-package com.wisefam.blocks;
+package net.wisefam.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockOre;

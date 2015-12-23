@@ -1,4 +1,4 @@
-package com.wisefam.items;
+package net.wisefam.items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

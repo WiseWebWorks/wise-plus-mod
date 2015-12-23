@@ -1,15 +1,15 @@
-package com.wisefam.items;
+package net.wisefam.items;
 
-import com.wisefam.materials.TitaniumMaterial;
+import net.wisefam.materials.TitaniumMaterial;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class TitaniumAxe extends ItemAxe {
+public class TitaniumPickaxe extends ItemPickaxe {
 
-    private final String name = "titaniumAxe";
+    private final String name = "titaniumPickaxe";
 
-    public TitaniumAxe() {
+    public TitaniumPickaxe() {
         super(TitaniumMaterial.TOOL);
 
         GameRegistry.registerItem(this, name);

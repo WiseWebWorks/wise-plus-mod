@@ -1,20 +1,20 @@
-package com.wisefam.items;
+package net.wisefam.items;
 
-import com.wisefam.materials.TitaniumMaterial;
+import net.wisefam.materials.TitaniumMaterial;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemSword;
+import net.minecraft.item.ItemSpade;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class TitaniumSword extends ItemSword {
+public class TitaniumShovel extends ItemSpade {
 
-    private final String name = "titaniumSword";
+    private final String name = "titaniumShovel";
 
-    public TitaniumSword() {
+    public TitaniumShovel() {
         super(TitaniumMaterial.TOOL);
 
         GameRegistry.registerItem(this, name);
         setMaxStackSize(64);
-        setCreativeTab(CreativeTabs.tabCombat);
+        setCreativeTab(CreativeTabs.tabTools);
         setUnlocalizedName(name);
     }
 

@@ -1,7 +1,7 @@
-package com.wisefam.meta;
+package net.wisefam.meta;
 
-import com.wisefam.blocks.TitaniumBlock;
-import com.wisefam.blocks.TitaniumOre;
+import net.wisefam.blocks.TitaniumBlock;
+import net.wisefam.blocks.TitaniumOre;
 
 public class Blocks {
 
