@@ -16,6 +16,7 @@ public class Recipes {
         addArmorRecipes(craftingManager);
         addToolRecipes(craftingManager);
         addWeaponRecipes(craftingManager);
+        addHorseArmorRecipes(craftingManager);
     }
 
     public void addIngotRecipes(CraftingManager craftingManager) {
@@ -64,6 +65,14 @@ public class Recipes {
                 craftingManager.addRecipe(new ItemStack(outputItem), weaponRecipePatterns[j], '#', Items.stick, 'X', inputItem);
             }
         }
+    }
+
+    public void addHorseArmorRecipes(CraftingManager craftingManager) {
+        String[] horseArmorPattern = new String[]{"  #", "###", "# #"};
+        craftingManager.addRecipe(new ItemStack(ModItems.titaniumHorseArmor), horseArmorPattern, '#', ModItems.titaniumIngot);
+        craftingManager.addRecipe(new ItemStack(Items.iron_horse_armor), horseArmorPattern, '#', Items.iron_ingot);
+        craftingManager.addRecipe(new ItemStack(Items.golden_horse_armor), horseArmorPattern, '#', Items.gold_ingot);
+        craftingManager.addRecipe(new ItemStack(Items.diamond_horse_armor), horseArmorPattern, '#', Items.diamond);
     }
 
 }
