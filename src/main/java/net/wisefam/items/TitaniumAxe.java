@@ -13,7 +13,7 @@ public class TitaniumAxe extends ItemAxe {
         super(TitaniumMaterial.TOOL);
 
         GameRegistry.registerItem(this, name);
-        setMaxStackSize(64);
+        setMaxStackSize(1);
         setCreativeTab(CreativeTabs.tabTools);
         setUnlocalizedName(name);
     }

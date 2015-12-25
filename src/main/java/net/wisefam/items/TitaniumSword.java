@@ -13,7 +13,7 @@ public class TitaniumSword extends ItemSword {
         super(TitaniumMaterial.TOOL);
 
         GameRegistry.registerItem(this, name);
-        setMaxStackSize(64);
+        setMaxStackSize(1);
         setCreativeTab(CreativeTabs.tabCombat);
         setUnlocalizedName(name);
     }

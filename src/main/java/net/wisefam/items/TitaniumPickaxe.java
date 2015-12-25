@@ -13,7 +13,7 @@ public class TitaniumPickaxe extends ItemPickaxe {
         super(TitaniumMaterial.TOOL);
 
         GameRegistry.registerItem(this, name);
-        setMaxStackSize(64);
+        setMaxStackSize(1);
         setCreativeTab(CreativeTabs.tabTools);
         setUnlocalizedName(name);
     }
@@ -21,4 +21,5 @@ public class TitaniumPickaxe extends ItemPickaxe {
     public String getName() {
         return name;
     }
+
 }
