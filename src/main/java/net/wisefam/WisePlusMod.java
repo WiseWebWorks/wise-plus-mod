@@ -40,6 +40,8 @@ public class WisePlusMod {
 
         // Items
         ModItems.initialize();
+
+        new ModWorldGenerator();
     }
 
     /**
