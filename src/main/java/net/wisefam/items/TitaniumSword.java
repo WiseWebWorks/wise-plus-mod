@@ -8,21 +8,22 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.wisefam.materials.TitaniumMaterial;
 
-public class TitaniumSword extends ItemSword {
+public class TitaniumSword extends ItemSword implements NamedItem {
 
-    private final String name = "titaniumSword";
+    private final String name = "titanium_sword";
 
     private final TitaniumItemRegenerator itemRegenerator = new TitaniumItemRegenerator(this);
 
     public TitaniumSword() {
         super(TitaniumMaterial.TOOL);
 
-        GameRegistry.registerItem(this, name);
+        GameRegistry.register(setRegistryName(name));
         setMaxStackSize(1);
-        setCreativeTab(CreativeTabs.tabCombat);
+        setCreativeTab(CreativeTabs.COMBAT);
         setUnlocalizedName(name);
     }
 
+    @Override
     public String getName() {
         return name;
     }

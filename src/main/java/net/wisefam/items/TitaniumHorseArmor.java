@@ -7,19 +7,20 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class TitaniumHorseArmor extends Item {
+public class TitaniumHorseArmor extends Item implements NamedItem {
 
-    private final String name = "titaniumHorseArmor";
+    private final String name = "titanium_horse_armor";
 
     private final TitaniumItemRegenerator itemRegenerator = new TitaniumItemRegenerator(this);
 
     public TitaniumHorseArmor() {
-        GameRegistry.registerItem(this, name);
+        GameRegistry.register(setRegistryName(name));
         setMaxStackSize(1);
-        setCreativeTab(CreativeTabs.tabMisc);
+        setCreativeTab(CreativeTabs.MISC);
         setUnlocalizedName(name);
     }
 
+    @Override
     public String getName() {
         return name;
     }

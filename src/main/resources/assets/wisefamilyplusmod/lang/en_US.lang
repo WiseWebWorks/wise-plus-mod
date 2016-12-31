@@ -1,14 +1,14 @@
-tile.titaniumOre.name=Titanium Ore
-tile.titaniumBlock.name=Titanium Block
+tile.titanium_ore.name=Titanium Ore
+tile.titanium_block.name=Titanium Block
 
-item.titaniumAxe.name=Titanium Axe
-item.titaniumBoots.name=Titanium Boots
-item.titaniumChestplate.name=Titanium Chestplate
-item.titaniumHelmet.name=Titanium Helmet
-item.titaniumHoe.name=Titanium Hoe
-item.titaniumHorseArmor.name=Titanium Horse Armor
-item.titaniumIngot.name=Titanium Ingot
-item.titaniumLeggings.name=Titanium Leggings
-item.titaniumPickaxe.name=Titanium Pickaxe
-item.titaniumShovel.name=Titanium Shovel
-item.titaniumSword.name=Titanium Sword
+item.titanium_axe.name=Titanium Axe
+item.titanium_boots.name=Titanium Boots
+item.titanium_chestplate.name=Titanium Chestplate
+item.titanium_helmet.name=Titanium Helmet
+item.titanium_hoe.name=Titanium Hoe
+item.titanium_horse_armor.name=Titanium Horse Armor
+item.titanium_ingot.name=Titanium Ingot
+item.titanium_leggings.name=Titanium Leggings
+item.titanium_pickaxe.name=Titanium Pickaxe
+item.titanium_shovel.name=Titanium Shovel
+item.titanium_sword.name=Titanium Sword

@@ -8,21 +8,22 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.wisefam.materials.TitaniumMaterial;
 
-public class TitaniumAxe extends ItemAxe {
+public class TitaniumAxe extends ItemAxe implements NamedItem {
 
-    private final String name = "titaniumAxe";
+    private final String name = "titanium_axe";
 
     private final TitaniumItemRegenerator itemRegenerator = new TitaniumItemRegenerator(this);
 
     public TitaniumAxe() {
-        super(TitaniumMaterial.TOOL);
+        super(TitaniumMaterial.TOOL, 8.0F, -1.0f);
 
-        GameRegistry.registerItem(this, name);
+        GameRegistry.register(setRegistryName(name));
         setMaxStackSize(1);
-        setCreativeTab(CreativeTabs.tabTools);
+        setCreativeTab(CreativeTabs.TOOLS);
         setUnlocalizedName(name);
     }
 
+    @Override
     public String getName() {
         return name;
     }

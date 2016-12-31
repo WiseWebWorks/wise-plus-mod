@@ -4,30 +4,30 @@ import net.wisefam.items.*;
 
 public class ModItems {
 
-    public static TitaniumAxe titaniumAxe;
-    public static TitaniumBoots titaniumBoots;
-    public static TitaniumChestplate titaniumChestplate;
-    public static TitaniumHelmet titaniumHelmet;
-    public static TitaniumHoe titaniumHoe;
-    public static TitaniumHorseArmor titaniumHorseArmor;
-    public static TitaniumIngot titaniumIngot;
-    public static TitaniumLeggings titaniumLeggings;
-    public static TitaniumPickaxe titaniumPickaxe;
-    public static TitaniumShovel titaniumShovel;
-    public static TitaniumSword titaniumSword;
+    public static TitaniumAxe TITANIUM_AXE;
+    public static TitaniumBoots TITANIUM_BOOTS;
+    public static TitaniumChestplate TITANIUM_CHESTPLATE;
+    public static TitaniumHelmet TITANIUM_HELMET;
+    public static TitaniumHoe TITANIUM_HOE;
+    public static TitaniumHorseArmor TITANIUM_HORSE_ARMOR;
+    public static TitaniumIngot TITANIUM_INGOT;
+    public static TitaniumLeggings TITANIUM_LEGGINGS;
+    public static TitaniumPickaxe TITANIUM_PICKAXE;
+    public static TitaniumShovel TITANIUM_SHOVEL;
+    public static TitaniumSword TITANIUM_SWORD;
 
-    public static void initialize() {
-        titaniumAxe = new TitaniumAxe();
-        titaniumBoots = new TitaniumBoots();
-        titaniumChestplate = new TitaniumChestplate();
-        titaniumHelmet = new TitaniumHelmet();
-        titaniumHoe = new TitaniumHoe();
-        titaniumHorseArmor = new TitaniumHorseArmor();
-        titaniumIngot = new TitaniumIngot();
-        titaniumLeggings = new TitaniumLeggings();
-        titaniumPickaxe = new TitaniumPickaxe();
-        titaniumShovel = new TitaniumShovel();
-        titaniumSword = new TitaniumSword();
+    public static void createItems() {
+        TITANIUM_AXE = new TitaniumAxe();
+        TITANIUM_BOOTS = new TitaniumBoots();
+        TITANIUM_CHESTPLATE = new TitaniumChestplate();
+        TITANIUM_HELMET = new TitaniumHelmet();
+        TITANIUM_HOE = new TitaniumHoe();
+        TITANIUM_HORSE_ARMOR = new TitaniumHorseArmor();
+        TITANIUM_INGOT = new TitaniumIngot();
+        TITANIUM_LEGGINGS = new TitaniumLeggings();
+        TITANIUM_PICKAXE = new TitaniumPickaxe();
+        TITANIUM_SHOVEL = new TitaniumShovel();
+        TITANIUM_SWORD = new TitaniumSword();
     }
 
 }

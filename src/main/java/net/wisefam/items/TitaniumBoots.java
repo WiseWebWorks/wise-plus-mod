@@ -1,9 +1,11 @@
 package net.wisefam.items;
 
+import net.minecraft.inventory.EntityEquipmentSlot;
+
 public class TitaniumBoots extends TitaniumArmor {
 
     public TitaniumBoots() {
-        super("titaniumBoots", 3);
+        super("titanium_boots", EntityEquipmentSlot.FEET);
     }
 
 }

@@ -3,8 +3,9 @@ package net.wisefam;
 import com.google.common.base.Predicate;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
@@ -19,21 +20,19 @@ public class ModWorldGenerator implements IWorldGenerator {
     private WorldGenMinable titaniumOreGenerator; //Generates Titanium Ore (used in Overworld)
 
     public ModWorldGenerator() {
-        this.titaniumOreGenerator = new WorldGenMinable(ModBlocks.titaniumOre.getDefaultState(), 7, new UndergroundBlockPredicate());
+        this.titaniumOreGenerator = new WorldGenMinable(ModBlocks.TITANIUM_ORE.getDefaultState(), 7, new UndergroundBlockPredicate());
         GameRegistry.registerWorldGenerator(this, 0);
     }
 
     @Override
-    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
-        switch (world.provider.getDimensionId()) {
-            case 0: //Overworld
+    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator iChunkGenerator, IChunkProvider iChunkProvider) {
+        switch (world.provider.getDimensionType()) {
+            case OVERWORLD:
                 runGenerator(this.titaniumOreGenerator, world, random, chunkX, chunkZ, 2, 40, 50);
                 break;
-            case -1: //Nether
-
+            case NETHER:
                 break;
-            case 1: //End
-
+            case THE_END:
                 break;
         }
     }
@@ -55,16 +54,16 @@ public class ModWorldGenerator implements IWorldGenerator {
         @Override
         public boolean apply(IBlockState input) {
             return input != null && (
-                    input.getBlock() == Blocks.stone || // includes Granite, Polished Granite, Diorite, Polished Diorite, Andesite, and Polished Andesite
-                            input.getBlock() == Blocks.cobblestone ||
-                            input.getBlock() == Blocks.dirt ||
-                            input.getBlock() == Blocks.gravel ||
-                            input.getBlock() == Blocks.lava ||
-                            input.getBlock() == Blocks.water ||
-                            input.getBlock() == Blocks.sand ||
-                            input.getBlock() == Blocks.sandstone ||
-                            input.getBlock() == Blocks.flowing_lava ||
-                            input.getBlock() == Blocks.flowing_water
+                    input.getBlock() == Blocks.STONE || // includes Granite, Polished Granite, Diorite, Polished Diorite, Andesite, and Polished Andesite
+                            input.getBlock() == Blocks.COBBLESTONE ||
+                            input.getBlock() == Blocks.DIRT ||
+                            input.getBlock() == Blocks.GRAVEL ||
+                            input.getBlock() == Blocks.LAVA ||
+                            input.getBlock() == Blocks.WATER ||
+                            input.getBlock() == Blocks.SAND ||
+                            input.getBlock() == Blocks.SANDSTONE ||
+                            input.getBlock() == Blocks.FLOWING_LAVA ||
+                            input.getBlock() == Blocks.FLOWING_WATER
             );
         }
     }

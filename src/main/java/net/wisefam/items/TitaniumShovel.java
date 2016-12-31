@@ -8,21 +8,22 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.wisefam.materials.TitaniumMaterial;
 
-public class TitaniumShovel extends ItemSpade {
+public class TitaniumShovel extends ItemSpade implements NamedItem {
 
-    private final String name = "titaniumShovel";
+    private final String name = "titanium_shovel";
 
     private final TitaniumItemRegenerator itemRegenerator = new TitaniumItemRegenerator(this);
 
     public TitaniumShovel() {
         super(TitaniumMaterial.TOOL);
 
-        GameRegistry.registerItem(this, name);
+        GameRegistry.register(setRegistryName(name));
         setMaxStackSize(1);
-        setCreativeTab(CreativeTabs.tabTools);
+        setCreativeTab(CreativeTabs.TOOLS);
         setUnlocalizedName(name);
     }
 
+    @Override
     public String getName() {
         return name;
     }

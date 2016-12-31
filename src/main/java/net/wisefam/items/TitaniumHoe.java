@@ -8,21 +8,22 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.wisefam.materials.TitaniumMaterial;
 
-public class TitaniumHoe extends ItemHoe {
+public class TitaniumHoe extends ItemHoe implements NamedItem {
 
-    private final String name = "titaniumHoe";
+    private final String name = "titanium_hoe";
 
     private final TitaniumItemRegenerator itemRegenerator = new TitaniumItemRegenerator(this);
 
     public TitaniumHoe() {
         super(TitaniumMaterial.TOOL);
 
-        GameRegistry.registerItem(this, name);
+        GameRegistry.register(setRegistryName(name));
         setMaxStackSize(1);
-        setCreativeTab(CreativeTabs.tabTools);
+        setCreativeTab(CreativeTabs.TOOLS);
         setUnlocalizedName(name);
     }
 
+    @Override
     public String getName() {
         return name;
     }

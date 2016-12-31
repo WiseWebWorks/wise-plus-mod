@@ -1,9 +1,11 @@
 package net.wisefam.items;
 
+import net.minecraft.inventory.EntityEquipmentSlot;
+
 public class TitaniumChestplate extends TitaniumArmor {
 
     public TitaniumChestplate() {
-        super("titaniumChestplate", 1);
+        super("titanium_chestplate", EntityEquipmentSlot.CHEST);
     }
 
 }
